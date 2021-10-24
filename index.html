@@ -13,8 +13,25 @@
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Каталог</a>
+            <li class="navigation-item catalog-item">
+              <a class="navigation-link">Каталог</a>
+              <ul class="catalog-menu">
+                <li class="catalog-menu-item catalog-new">
+                  <a class="catalog-menu-link" href="#">Новинки</a>
+                </li>
+                <li class="catalog-menu-item">
+                  <a class="catalog-menu-link" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="catalog-menu-item">
+                  <a class="catalog-menu-link" href="#">Щербеты</a>
+                </li>
+                <li class="catalog-menu-item">
+                  <a class="catalog-menu-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="catalog-menu-item">
+                  <a class="catalog-menu-link" href="#">Мелорин</a>
+                </li>
+              </ul>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -27,14 +44,40 @@
             <li class="navigation-item">
               <a class="navigation-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link search visually-hidden" href="search.html">Поиск по сайту</a>
+            <li class="navigation-item search-button">
+              <a class="navigation-link search visually-hidden">Поиск по сайту</a>
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                  <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+                  <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+                  <button type="submit" aria-label="Найти"></button>
+                </form>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item authorization-button">
               <a class="navigation-link" href="#">Вход</a>
+              <div class="login-bar">
+                <h3 class="login-title">Личный кабинет</h3>
+                <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <p class="login-item-login">
+                    <label class="visually-hidden" for="login-login">Email</label>
+                    <input placeholder="email@example.com" type="email" name="login" id="login-login" required>
+                  </p>
+                  <p class="login-item-password">
+                    <label class="visually-hidden" for="login-password">Пароль</label>
+                    <input id="login-password" type="password" name="password" placeholder="••••••••">
+                  </p>
+                  <button class="additional-button login-button" type="submit">Войти</button>
+                  <p class="login-item-authorization">
+                    <a class="recovery" href="#">Забыли пароль?</a>
+                    <a class="registration" href="#">Регистрация</a>
+                  </p>
+                </form>
+              </div>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="basket.html">Пусто</a>
+              <a class="navigation-link">Пусто</a>
+              <div class="basket-empty">
+                <h3 class="basket-empty-title">Ваша корзина пока пуста</h3>
+              </div>
             </li>
           </ul>
         </nav>
@@ -94,7 +137,7 @@
               </div>
             </div>
           </div>
-          <ul class="social-list slider-social">
+          <ul class="social-list">
             <li class="social-item">
               <a class="social-button" href="#">
                 <span class="visually-hidden">Вконтакте</span>
@@ -322,55 +365,6 @@
       </section>
     </footer>
 
-    <section class="modal modal-catalog-menu">
-      <h3 class="visually-hidden">Меню каталога</h3>
-      <ul class="catalog-menu">
-        <li class="catalog-menu-item">
-          <a class="catalog-menu-link catalog-new" href="#">Новинки</a>
-        </li>
-        <li class="catalog-menu-item">
-          <a class="catalog-menu-link" href="catalog.html">Сливочное</a>
-        </li>
-        <li class="catalog-menu-item">
-          <a class="catalog-menu-link" href="#">Щербеты</a>
-        </li>
-        <li class="catalog-menu-item">
-          <a class="catalog-menu-link" href="#">Фруктовый лед</a>
-        </li>
-        <li class="catalog-menu-item">
-          <a class="catalog-menu-link" href="#">Мелорин</a>
-        </li>
-      </ul>
-    </section>
-    <section class="modal modal-search">
-      <h3 class="visually-hidden">Поиск по сайту</h3>
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-        <input class="search" type="search" name="search" id="search-field" placeholder="Крем-брюле">
-        <button type="submit" aria-label="Найти"></button>
-      </form>
-    </section>
-    <section class="modal modal-login">
-      <h3 class="modal-title">Личный кабинет</h3>
-      <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="login-item-login">
-          <label class="visually-hidden" for="login-login">Email</label>
-          <input placeholder="email@example.com" type="email" name="login" id="login-login" required>
-        </p>
-        <p class="login-item-password">
-          <label class="visually-hidden" for="login-password">Пароль</label>
-          <input id="login-password" type="password" name="password" placeholder="••••••••">
-        </p>
-        <p class="login-item-authorization">
-          <button class="additional-button" type="submit">Войти</button>
-          <a class="recovery" href="#">Забыли пароль?</a>
-          <a class="registration" href="#">Регистрация</a>
-        </p>
-      </form>
-    </section>
-    <section class="modal modal-basket-empty">
-      <h3 class="modal-title">Ваша корзина пока пуста</h3>
-    </section>
     <section class="modal modal-feedback">
       <h2 class="modal-title">Мы обязательно ответим вам!</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
