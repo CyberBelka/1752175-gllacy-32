@@ -17,9 +17,9 @@
             <a class="navigation-link navigation-link-current" href="#">Каталог</a>
             <ul class="catalog-menu">
               <li class="catalog-menu-item catalog-new">
-                <a class="catalog-menu-link" href="#">Новинки</a>
+                <a class="catalog-menu-link catalog-new-link" href="#">Новинки</a>
               </li>
-              <li class="catalog-menu-item">
+              <li class="catalog-menu-item catalog-menu-item-active">
                 <a class="catalog-menu-link" href="catalog.html">Сливочное</a>
               </li>
               <li class="catalog-menu-item">
@@ -40,56 +40,45 @@
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
+        <p class="navigation-phone">
+          <a class="navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        </p>
         <ul class="navigation-user">
-          <li class="navigation-item navigation-item-phone">
-            <a class="navigation-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-          </li>
           <li class="navigation-item search-button">
-            <a class="navigation-user-link navigation-link-search">
-              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z" fill="#2D3440"/>
-              </svg>
+            <button class="navigation-user-link navigation-link-search">
               <span class="visually-hidden">Поиск</span>
-            </a>
+            </button>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-              <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
-              <button type="submit" aria-label="Найти"></button>
+              <input class="search-field" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+              <button class="search-field-button" type="button" aria-label="Закрыть"></button>
             </form>
           </li>
           <li class="navigation-item authorization-button">
-            <a class="navigation-user-link navigation-link-login" href="#">Вход
-              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" fill="#2D3440"/>
-              </svg>
-            </a>
+            <a class="navigation-user-link navigation-link-login" href="#">Вход</a>
             <div class="login-bar">
               <h3 class="login-title">Личный кабинет</h3>
               <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p class="login-item-login">
                   <label class="visually-hidden" for="login-login">Email</label>
-                  <input placeholder="email@example.com" type="email" name="login" id="login-login" required>
+                  <input class="field" placeholder="email@example.com" type="email" name="login" id="login-login">
                 </p>
                 <p class="login-item-password">
                   <label class="visually-hidden" for="login-password">Пароль</label>
-                  <input id="login-password" type="password" name="password" placeholder="••••••••">
+                  <input class="field" id="login-password" type="password" name="password" placeholder="••••••••">
                 </p>
                 <div class="login-item-authorization">
                   <button class="additional-button login-button" type="submit">Войти</button>
                   <p class="registration">
                     <a class="recovery" href="#">Забыли пароль?</a>
-                    <a href="#">Регистрация</a>
+                    <a class="registration-link" href="#">Регистрация</a>
                   </p>
                 </div>
               </form>
             </div>
           </li>
           <li class="navigation-item basket-item-button">
-            <a class="navigation-user-link navigation-link-basket full-basket" href="#">2 товара
-              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" fill="#2D3440"/>
-              </svg>
-            </a>
+            <a class="navigation-user-link navigation-link-basket full-basket" href="#">2 товара</a>
             <div class="basket">
               <h3 class="basket-title">Корзина</h3>
               <ul class="basket-product-list">
@@ -156,45 +145,47 @@
               <button class="visually-hidden" type="submit">Отсортировать продукты</button>
             </fieldset>
             <fieldset class="filter-group filter-price">
-              <legend class="filter-title visually-hidden">Цена:</legend>
-                <div class="price-controls">Цена:
-                    <label class="min-price">
-                        <input type="number" name="min-price" value="100">
-                    </label> ₽
-                    <p>&mdash;</p>
-                    <label class="max-price">
-                        <input type="number" name="max-price" value="500">
-                    </label> ₽
-                </div>
-              <div class="range-filter">
-                <div class="range-controls">
-                    <div class="scale">
-                        <div class="bar"></div>
-                    </div>
-                    <div class="toggle toggle-min" tabindex="0"></div>
-                    <div class="toggle toggle-max" tabindex="0"></div>
+              <legend class="visually-hidden">Цена:</legend>
+              <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    Цена: <input class="range-input" type="number" value="100" name="min-price"> ₽
+                  </label>
+                  <label class="catalog-filter-label">
+                    &#8211; <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> ₽
+                  </label>
+              </div>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
                 </div>
 
-            </div>
+              </div>
             </fieldset>
             <fieldset class="filter-group filter-rich">
               <legend class="filter-title">Жирность:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="0%" id="0%">
-                  <label class="control" for="0%">0%</label>
+                  <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="0%" id="0%">
+                  <label class="control-radio" for="0%">0%</label>
                 </li>
                 <li class="filter-item">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="10%" id="10%" checked>
-                  <label class="control" for="10%">до 10%</label>
+                  <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="10%" id="10%" checked>
+                  <label class="control-radio" for="10%">до 10%</label>
                 </li>
                 <li class="filter-item">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="30%" id="30%">
-                  <label class="control" for="30%">до 30%</label>
+                  <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="30%" id="30%">
+                  <label class="control-radio" for="30%">до 30%</label>
                 </li>
                 <li class="filter-item">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="40%" id="40%">
-                  <label class="control" for="40%">выше 30%</label>
+                  <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="40%" id="40%">
+                  <label class="control-radio" for="40%">выше 30%</label>
                 </li>
               </ul>
             </fieldset>
@@ -202,24 +193,24 @@
               <legend class="filter-title">Наполнители:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
-                  <input class="visually-hidden control-input" type="checkbox" name="chocolate" id="chocolate" checked>
-                  <label class="control" for="chocolate">шоколадные</label>
+                  <input class="visually-hidden control-input-checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
+                  <label class="control-checkbox" for="chocolate">шоколадные</label>
                 </li>
                 <li class="filter-item">
-                  <input class="visually-hidden control-input" type="checkbox" name="sugar" id="sugar" checked>
-                  <label class="control" for="sugar">сахарные присыпки</label>
+                  <input class="visually-hidden control-input-checkbox" type="checkbox" name="sugar" id="sugar" checked>
+                  <label class="control-checkbox" for="sugar">сахарные пoсыпки</label>
                 </li>
                 <li class="filter-item">
-                    <input class="visually-hidden control-input" type="checkbox" name="fruits" id="fruits">
-                    <label class="control" for="fruits">фрукты</label>
+                    <input class="visually-hidden control-input-checkbox" type="checkbox" name="fruits" id="fruits">
+                    <label class="control-checkbox" for="fruits">фрукты</label>
                 </li>
                 <li class="filter-item">
-                    <input class="visually-hidden control-input" type="checkbox" name="syrups" id="syrups">
-                    <label class="control" for="syrups">сиропы</label>
+                    <input class="visually-hidden control-input-checkbox" type="checkbox" name="syrups" id="syrups">
+                    <label class="control-checkbox" for="syrups">сиропы</label>
                 </li>
                 <li class="filter-item">
-                    <input class="visually-hidden control-input" type="checkbox" name="jams" id="jams">
-                    <label class="control" for="jams">джемы</label>
+                    <input class="visually-hidden control-input-checkbox" type="checkbox" name="jams" id="jams">
+                    <label class="control-checkbox" for="jams">джемы</label>
                 </li>
               </ul>
             </fieldset>
@@ -229,14 +220,16 @@
         <section class="catalog-card">
           <ul class="product-list product-list-catalog">
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link-title" href="#">
                 <h3 class="product-card-title">Малинка</h3>
+              </a>
+              <a class="product-card-link-image" href="#">
                 <img class="product-card-image" src="img/card-raspberry.png" width="168" height="168" alt="Сливочное мороженое с малиновым джемом">
-                <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
               </a>
+              <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
               <div class="product-card-basket">
                 <b class="product-card-price">310 ₽/кг</b>
-                <a href="#" class="basket-button">
+                <a class="basket-button" href="#">
                   <span class="visually-hidden">Купить</span>
                   <svg class="basket-button-icon" aria-hidden="true" focusable="false" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" fill="currentColor"/>
@@ -245,14 +238,16 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link-title" href="#">
                 <h3 class="product-card-title">Фисташка</h3>
-                <img class="product-card-image" src="img/card-pistachio.png" width="168" height="168" alt="Фисташковый пломбир с кусочками шоколада">
-                <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
               </a>
+              <a class="product-card-link-image" href="#">
+                <img class="product-card-image" src="img/card-pistachio.png" width="168" height="168" alt="Фисташковый пломбир с кусочками шоколада">
+              </a>
+              <p class="product-card-description">Фисташковый пломбир<br> с кусочками шоколада</p>
               <div class="product-card-basket">
-                <b class="product-card-price">310 ₽/кг</b>
-                <a href="#" class="basket-button">
+                <b class="product-card-price">340 ₽/кг</b>
+                <a class="basket-button" href="#">
                   <span class="visually-hidden">Купить</span>
                   <svg class="basket-button-icon" aria-hidden="true" focusable="false" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" fill="currentColor"/>
@@ -261,14 +256,16 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link-title" href="#">
                 <h3 class="product-card-title">Черника</h3>
-                <img class="product-card-image" src="img/card-blueberry.png" width="168" height="168" alt="Крем-брюле с черничным джемом">
-                <p class="product-card-description">Крем-брюле<br> с черничным джемом</p>
               </a>
+              <a class="product-card-link-image" href="#">
+                <img class="product-card-image" src="img/card-blueberry.png" width="168" height="168" alt="Крем-брюле с черничным джемом">
+              </a>
+              <p class="product-card-description">Крем-брюле<br> с черничным джемом</p>
               <div class="product-card-basket">
                 <b class="product-card-price">330 ₽/кг</b>
-                <a href="#" class="basket-button">
+                <a class="basket-button" href="#">
                   <span class="visually-hidden">Купить</span>
                   <svg class="basket-button-icon" aria-hidden="true" focusable="false" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" fill="currentColor"/>
@@ -277,14 +274,16 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link-title" href="#">
                 <h3 class="product-card-title">Бабл-гам</h3>
-                <img class="product-card-image" src="img/card-gum.png" width="168" height="168" alt="Ванильный пломбир со сладкой посыпкой">
-                <p class="product-card-description">Ванильный пломбир<br> со сладкой посыпкой</p>
               </a>
+              <a class="product-card-link-image" href="#">
+                <img class="product-card-image" src="img/card-gum.png" width="168" height="168" alt="Ванильный пломбир со сладкой посыпкой">
+              </a>
+              <p class="product-card-description">Ванильный пломбир<br> со сладкой посыпкой</p>
               <div class="product-card-basket">
                 <b class="product-card-price">320 ₽/кг</b>
-                <a href="#" class="basket-button">
+                <a class="basket-button" href="#">
                   <span class="visually-hidden">Купить</span>
                   <svg class="basket-button-icon" aria-hidden="true" focusable="false" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" fill="currentColor"/>
@@ -293,11 +292,13 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link-title" href="#">
                 <h3 class="product-card-title">Ежевика</h3>
-                <img class="product-card-image" src="img/card-blackberry.png" width="168" height="168" alt="Сливочное мороженое с ежевичным джемом">
-                <p class="product-card-description">Сливочное мороженое с ежевичным джемом</p>
               </a>
+              <a class="product-card-link-image" href="#">
+                <img class="product-card-image" src="img/card-blackberry.png" width="168" height="168" alt="Сливочное мороженое с ежевичным джемом">
+              </a>
+              <p class="product-card-description">Сливочное мороженое с ежевичным джемом</p>
               <div class="product-card-basket">
                 <b class="product-card-price">330 ₽/кг</b>
                 <a href="#" class="basket-button">
@@ -309,11 +310,13 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link-title" href="#">
                 <h3 class="product-card-title">Банан</h3>
-                <img class="product-card-image" src="img/card-banana.png" width="168" height="168" alt="Сливочный пломбир с банановым вкусом">
-                <p class="product-card-description">Сливочный пломбир<br> с банановым вкусом</p>
               </a>
+              <a class="product-card-link-image" href="#">
+                <img class="product-card-image" src="img/card-banana.png" width="168" height="168" alt="Сливочный пломбир с банановым вкусом">
+              </a>
+              <p class="product-card-description">Сливочный пломбир<br> с банановым вкусом</p>
               <div class="product-card-basket">
                 <b class="product-card-price">340 ₽/кг</b>
                 <a href="#" class="basket-button">
@@ -325,11 +328,13 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link-title" href="#">
                 <h3 class="product-card-title">Шоколадка</h3>
+              </a>
+              <a class="product-card-link-image" href="#">
                 <img class="product-card-image" src="img/card-chocolate.png" width="168" height="168" alt="Классический шоколадный пломбир">
-                <p class="product-card-description">Классический шоколадный пломбир</p>
               </a>
+              <p class="product-card-description">Классический шоколадный пломбир</p>
               <div class="product-card-basket">
                 <b class="product-card-price">270 ₽/кг</b>
                 <a href="#" class="basket-button">
@@ -341,13 +346,15 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link-title" href="#">
                 <h3 class="product-card-title">Клубничка</h3>
-                <img class="product-card-image" src="img/card-strawberry.png" width="168" height="168" alt="Сливочный пломбир с клубничным вкусом">
-                <p class="product-card-description">Сливочный пломбир<br> с клубничным вкусом</p>
               </a>
+              <a class="product-card-link-image" href="#">
+                <img class="product-card-image" src="img/card-strawberry.png" width="168" height="168" alt="Сливочный пломбир с клубничным вкусом">
+              </a>
+              <p class="product-card-description">Сливочный пломбир<br> с клубничным вкусом</p>
               <div class="product-card-basket">
-                <b class="product-card-price">270 ₽/кг</b>
+                <b class="product-card-price">300 ₽/кг</b>
                 <a href="#" class="basket-button">
                   <span class="visually-hidden">Купить</span>
                   <svg class="basket-button-icon" aria-hidden="true" focusable="false" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -357,11 +364,13 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link-title" href="#">
                 <h3 class="product-card-title">Лимон</h3>
-                <img class="product-card-image" src="img/card-lemon.png" width="168" height="168" alt="Освежающий лимонный сорбет">
-                <p class="product-card-description">Освежающий лимонный сорбет</p>
               </a>
+              <a class="product-card-link-image" href="#">
+                <img class="product-card-image" src="img/card-lemon.png" width="168" height="168" alt="Освежающий лимонный сорбет">
+              </a>
+              <p class="product-card-description">Освежающий лимонный сорбет</p>
               <div class="product-card-basket">
                 <b class="product-card-price">310 ₽/кг</b>
                 <a href="#" class="basket-button">
@@ -373,11 +382,13 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link-title" href="#">
                 <h3 class="product-card-title">Ментол</h3>
-                <img class="product-card-image" src="img/card-menthol.png" width="168" height="168" alt="Сливочный пломбир с ментоловым сиропом">
-                <p class="product-card-description">Сливочный пломбир<br> с ментоловым сиропом</p>
               </a>
+              <a class="product-card-link-image" href="#">
+                <img class="product-card-image" src="img/card-menthol.png" width="168" height="168" alt="Сливочный пломбир с ментоловым сиропом">
+              </a>
+              <p class="product-card-description">Сливочный пломбир<br> с ментоловым сиропом</p>
               <div class="product-card-basket">
                 <b class="product-card-price">320 ₽/кг</b>
                 <a href="#" class="basket-button">
@@ -389,11 +400,13 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link-title" href="#">
                 <h3 class="product-card-title">Орешек</h3>
-                <img class="product-card-image" src="img/card-nut.png" width="168" height="168" alt="Фисташковый пломбир с шоколадным сиропом">
-                <p class="product-card-description">Фисташковый пломбир с шоколадным сиропом</p>
               </a>
+              <a class="product-card-link-image" href="#">
+                <img class="product-card-image" src="img/card-nut.png" width="168" height="168" alt="Фисташковый пломбир с шоколадным сиропом">
+              </a>
+              <p class="product-card-description">Фисташковый пломбир с шоколадным сиропом</p>
               <div class="product-card-basket">
                 <b class="product-card-price">360 ₽/кг</b>
                 <a href="#" class="basket-button">
@@ -405,11 +418,13 @@
               </div>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link-title" href="#">
                 <h3 class="product-card-title">Крем-брюле</h3>
-                <img class="product-card-image" src="img/card-creme-brulee.png" width="168" height="168" alt="Классическое крем-брюле">
-                <p class="product-card-description">Классическое<br> крем-брюле</p>
               </a>
+              <a class="product-card-link-image" href="#">
+                <img class="product-card-image" src="img/card-creme-brulee.png" width="168" height="168" alt="Классическое крем-брюле">
+              </a>
+              <p class="product-card-description">Классическое<br> крем-брюле</p>
               <div class="product-card-basket">
                 <b class="product-card-price">280 ₽/кг</b>
                 <a href="#" class="basket-button">
@@ -507,7 +522,7 @@
         <a class="developer-logo" href="https://htmlacademy.ru/">
           <img src="img/logo-htmlacademy.svg" width="93" height="27" alt="Логотип html academy">
         </a>
-        <p class="developer-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+        <p class="developer-text">Сделано в <a class="developer-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
       </section>
     </footer>
   </body>
